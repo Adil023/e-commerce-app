@@ -1,10 +1,10 @@
-package com.amigosservice.discovery;
+package com.adilgadirov.customer;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class DiscoveryApplicationTests {
+class CustomerApplicationTests {
 
     @Test
     void contextLoads() {
