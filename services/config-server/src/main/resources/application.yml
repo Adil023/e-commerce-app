@@ -1,22 +1,12 @@
 server:
-  port: 8888 # Config server üçün port
-
+  port: 8888
 spring:
+  profiles:
+    active: native
   application:
     name: config-server
-  profiles:
-    # Konfiqurasiyaları proyektin içindən (classpath) oxuyacaq
-    active: native
   cloud:
     config:
       server:
         native:
-          # Konfiqurasiya fayllarının yerləşdiyi qovluq
           search-locations: classpath:/configurations
-
-# Bu hissə Config Server-in özünü Discovery Service-də qeydiyyatdan keçirməsi üçündür
-eureka:
-  client:
-    serviceUrl:
-      # Discovery Service-in ünvanını göstərir
-      defaultZone: http://localhost:8761/eureka/
