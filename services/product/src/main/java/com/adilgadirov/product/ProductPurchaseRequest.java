@@ -1,4 +1,7 @@
 package com.adilgadirov.product;
 
-public class ProductPurchaseRequest {
+public record ProductPurchaseRequest(
+        Integer productId,
+        double quantity
+) {
 }
